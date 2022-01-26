@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: #252839;
+}
+
+h2.home-page {
+    position: center;
+    font-size: 9vw;
+    color: #6808b8;
+    -webkit-transform: uppercase;
+}
+h2.home-page::before 
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #6808b8;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #6808b8;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@KeyFrames animate 
+{
+    0%,10%,100% 
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+

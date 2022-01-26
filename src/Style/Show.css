@@ -1,0 +1,14 @@
+span.details {
+    font-size: 2rem;
+}
+
+h2.show {
+    font-size: 3rem;
+}
+
+.show-logo {
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    width: 35%;
+}
