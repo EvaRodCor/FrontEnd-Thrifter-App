@@ -6,7 +6,8 @@ import { numberWithCommas } from '../Components/Format';
 
 
 function Transactions() {
-const URL = process.env.REACT_APP_API_URL;
+const REACT_APP_API_URL=`https://thrifter-app-express.herokuapp.com`
+const URL = REACT_APP_API_URL;
 const [transactions, setTransactions] = useState([]);
 
 

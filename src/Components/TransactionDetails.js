@@ -6,7 +6,8 @@ import { Link, useParams, useNavigate } from "react-router-dom";
 
 
 function TransactionDetails() {
-  const URL = process.env.REACT_APP_API_URL;
+  const REACT_APP_API_URL=`https://thrifter-app-express.herokuapp.com`
+  const URL = REACT_APP_API_URL;
   const navigate = useNavigate();
   const [transaction, setTransaction] = useState([]);
   let { index } = useParams();
