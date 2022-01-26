@@ -43,8 +43,7 @@ const updateTransaction = (editedTransaction) => {
     updateTransaction(transaction);
       };
 
-
-
+      
 
   return (
     <div className="Edit">

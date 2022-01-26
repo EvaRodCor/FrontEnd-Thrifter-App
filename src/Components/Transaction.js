@@ -19,7 +19,7 @@ function Transaction({ transaction, index }) {
             </h1>
       </td>
       <td>
-            <Link to={`/transactions/${index}`}>✏️ Edit Transaction</Link>
+            <Link to={`/transactions/${index}`}>Edit Transaction</Link>
       </td>
     </tr>
   );
