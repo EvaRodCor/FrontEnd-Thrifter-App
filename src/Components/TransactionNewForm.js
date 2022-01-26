@@ -8,7 +8,8 @@ import "../Style/NewTransaction.css"
 
 function TransactionNewForm() {
     const navigate = useNavigate();
-    const URL = process.env.REACT_APP_API_URL;
+    const REACT_APP_API_URL=`https://thrifter-app-express.herokuapp.com`
+    const URL = REACT_APP_API_URL;
     const [transaction, setTransaction] = useState({
         source: "",
         date: "",

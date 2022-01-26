@@ -8,7 +8,8 @@ import "../Style/ShowDetails.css";
 
 
 function TransactionEditForm() {
-  const URL = process.env.REACT_APP_API_URL;
+  const REACT_APP_API_URL=`https://thrifter-app-express.herokuapp.com`
+  const URL = REACT_APP_API_URL;
   let { index } = useParams();
   const navigate = useNavigate();
   const [transaction, setTransaction] = useState([]);
@@ -43,7 +44,7 @@ const updateTransaction = (editedTransaction) => {
     updateTransaction(transaction);
       };
 
-      
+
 
   return (
     <div className="Edit">
